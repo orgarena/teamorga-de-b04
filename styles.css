@@ -20,20 +20,23 @@
     margin: 0;
 }
 
+.Row{
+    flex-direction: row;
+    display: flex;
+}
+
 .ORGArena-Logo {
     width: 80px;
     height: 80px;
     object-fit: contain;
-    margin: 16px;
-    padding: 10px;
+    margin: 0 16px 0 0;
 }
 
 .B04-Logo {
     width: 100px;
     height: 100px;
     object-fit: contain;
-    margin: 16px;
-    padding: 0;
+    margin: 0 16px 0 0;
 }
 
 .ORGArena-Header {
@@ -55,12 +58,32 @@
     align-self: auto;
     background-position-x: 50%;
     background-position-y: 50%;
+    height: 300px;
 }
 
-.InnerWrapper{
-    padding: 0 32px;
+.InnerWrapper {
+    padding: 32px 32px 32px 32px;
 }
 
+.Headline {
+    margin: 0 0 164px 0;
+}
+
+.elementor-divider {
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.elementor-divider-separator {
+    width: 15%;
+    height: 3px;
+    margin: 0 auto;
+    margin-left: 0;
+    display: flex;
+    background-color: var(--color-primary)
+}
 
 .body-font {
     font-family: "ORGARENA Source Sans Pro", sans-serif;
@@ -69,14 +92,15 @@
 
 .h1 {
     color: #000000;
-    font-size: 30px;
+    font-size: 56px;
     font-weight: 900;
 }
 
 .h2 {
     color: #000000;
-    font-size: 20px;
+    font-size: 36px;
     font-weight: 800;
+    margin: 32px 0 16px 0;
 }
 
 .h3 {
@@ -85,14 +109,30 @@
     font-weight: 900;
 }
 
-.p {
+p {
     color: var(--color-text);
-    font-size: 24px;
-    font-weight: 900;
+    font-family: "ORGARENA Roboto Slab", serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.MaxW {
+    max-width: 500px;
 }
 
 .white {
     color: white;
+}
+
+.dark {
+    color: var(--color-fa51f6a);
+}
+
+.P-Box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
 .ORGArena-Button-Wrapper {
@@ -104,7 +144,12 @@
 }
 
 .ORGArena-Button {
+    background-color: var(--color-primary);
     color: white;
+    padding: 8px 16px;
+    margin: 8px 8px 8px 0;
+    flex-grow: 0;
+    border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -266,4 +311,134 @@
     url('https://www.orgarena.de/wp-content/uploads/2022/02/source-sans-pro-v18-latin-regular.woff') format('woff'),
     url('https://www.orgarena.de/wp-content/uploads/2022/02/source-sans-pro-v18-latin-regular.ttf') format('truetype'),
     url('https://www.orgarena.de/wp-content/uploads/2022/02/source-sans-pro-v18-latin-regular.svg#ORGARENASourceSansPro') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 100;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-100.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-100.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-100.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-100.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-100.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-100.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 200;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-200.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-200.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-200-1.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-200-1.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-200.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-200.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-300.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-300.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-300.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-300.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-300-1.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-300.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 500;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-500.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-500.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-500.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-500.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-500.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-500.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 600;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-600.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-600.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-600.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-600.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-600.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-600.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-700.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-700.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-700-1.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-700.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-700.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-700.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 800;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-800.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-800.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-800.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-800.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-800.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-800.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-900.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-900.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-900.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-900.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-900.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-900.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular.svg#ORGARENARobotoSlab') format('svg');
+}
+
+@font-face {
+    font-family: 'ORGARENA Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular-1.eot');
+    src: url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular-1.eot?#iefix') format('embedded-opentype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular-1.woff2') format('woff2'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular-1.woff') format('woff'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular-1.ttf') format('truetype'),
+    url('https://www.orgarena.de/wp-content/uploads/2022/02/roboto-slab-v22-latin-regular-1.svg#ORGARENARobotoSlab') format('svg');
 }
