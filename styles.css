@@ -20,7 +20,7 @@
     margin: 0;
 }
 
-.Row{
+.Row {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -48,12 +48,15 @@
 }
 
 .ORGArena-Header {
-    background-color: white;
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    padding: 32px;
     position: sticky;
+    top: 0;
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    top: 0;
     opacity: 1;
 }
 
@@ -126,7 +129,6 @@
 }
 
 
-
 p {
     color: var(--color-text);
     font-family: "ORGARENA Roboto Slab", serif;
@@ -170,6 +172,11 @@ p {
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.ORGArena-Link {
+    color: var(--color-primary);
+    font-size: 16px;
 }
 
 .elementor-kit-7 button, .elementor-kit-7 input[type="button"], .elementor-kit-7 input[type="submit"], .elementor-kit-7 .elementor-button {
